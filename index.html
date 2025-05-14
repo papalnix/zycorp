@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="卓彥國際有限公司 - 香港認證金融顧問機構，提供政府擔保貸款、BUD資助申請、企業銀行開戶、個人貸款等專業服務，95%成功率">
+    <title>卓彥國際有限公司 - 您值得信賴的專業金融顧問</title>
+    <link rel="icon" type="image/png" href="卓彥國際圖片素材文件夾/卓彥國際顧問有限公司公司介紹/logo.PNG">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="js/whatsapp-button.js"></script>
+    <a href="#" class="whatsapp-float">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.463 3.488C18.217 1.24 15.231 0.001 12.05 0H12.037C5.459 0 0.1 5.359 0.1 11.937C0.096 14.036 0.655 16.08 1.705 17.858L0 24L6.265 22.329C7.987 23.285 9.929 23.794 11.911 23.798H11.924C18.501 23.798 23.861 18.437 23.865 11.859C23.869 8.682 22.709 5.736 20.463 3.488ZM12.037 21.798C10.235 21.798 8.473 21.31 6.935 20.388L6.579 20.177L2.852 21.175L3.87 17.543L3.638 17.173C2.63 15.614 2.097 13.803 2.1 11.937C2.1 6.462 6.562 2 12.033 2C14.68 2.001 17.184 3.031 19.048 4.899C20.912 6.767 21.938 9.271 21.935 11.922C21.931 17.397 17.469 21.798 12.037 21.798ZM17.4 14.482C17.108 14.339 15.654 13.625 15.384 13.529C15.114 13.433 14.917 13.385 14.72 13.678C14.523 13.971 13.952 14.637 13.776 14.834C13.6 15.031 13.424 15.052 13.132 14.909C11.395 14.045 10.251 13.368 9.102 11.409C8.803 10.887 9.407 10.935 9.968 9.815C10.064 9.618 10.016 9.448 9.942 9.304C9.868 9.16 9.28 7.709 9.035 7.124C8.797 6.554 8.557 6.634 8.37 6.623C8.194 6.613 7.997 6.613 7.8 6.613C7.603 6.613 7.283 6.687 7.013 6.98C6.743 7.273 5.979 7.987 5.979 9.438C5.979 10.889 7.026 12.287 7.17 12.484C7.314 12.681 9.275 15.706 12.289 16.97C14.144 17.786 14.881 17.845 15.811 17.696C16.382 17.6 17.563 16.971 17.808 16.288C18.053 15.605 18.053 15.018 17.979 14.896C17.905 14.774 17.708 14.699 17.4 14.482Z"/>
+        </svg>
+    </a>
+    
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #d4af37;
+            --accent-color: #0078d4;
+            --light-bg: #f8f9fa;
+            --dark-bg: #212529;
+        }
+
+        body {
+            font-family: "Microsoft JhengHei", "微軟正黑體", "SimHei", "STHeiti", sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: white !important;
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: var(--secondary-color) !important;
+        }
+
+        .dropdown-menu {
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+        }
+
+        .dropdown-item:hover {
+            background-color: var(--light-bg);
+            color: var(--primary-color);
+        }
+
+        footer {
+            background-color: var(--dark-bg);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-title {
+            font-weight: bold;
+            margin-bottom: 25px;
+            color: var(--secondary-color);
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('卓彥國際圖片素材文件夾/卓彥廣告圖片/第1页-1.PNG');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            background-color: #c4a030;
+            border-color: #c4a030;
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-outline-light {
+            border-radius: 30px;
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-light:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .service-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-card .card-body {
+            padding: 25px;
+        }
+
+        .service-card .card-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .stats-section {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 80px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        .stat-text {
+            font-size: 1.2rem;
+        }
+
+        .promotion-section {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+
+        .promotion-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .promotion-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .promotion-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .promotion-content {
+            padding: 25px;
+        }
+
+        .promotion-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .promotion-text {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .cta-section {
+            background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9)), url('卓彥國際圖片素材文件夾/卓彥廣告圖片/第3页-8.PNG');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+
+            .cta-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">卓彥國際顧問</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            服務
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="./pages/services/government-loan.html">政府8/9成擔保貸款</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./pages/services/bud-fund.html">BUD專項基金申請</a></li>
+                            <li><a class="dropdown-item" href="./pages/services/bank-account.html">企業銀行開戶</a></li>
+                            <li><a class="dropdown-item" href="./pages/services/personal-loan.html">個人貸款服務</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/case-studies.html">成功案例</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contact.html">聯繫我們</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄區域 -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">您值得信賴的專業金融顧問</h1>
+            <p class="hero-subtitle">為香港及大中華區企業提供全方位金融解決方案</p>
+            <div class="d-flex justify-content-center flex-wrap gap-3">
+                <a href="./pages/contact.html" class="btn btn-primary">立即咨詢</a>
+                <a href="#services" class="btn btn-outline-light">了解服務</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服務區域 -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">我們的專業服務</h2>
+                <p class="text-muted">為您的企業和個人財務需求提供全面解決方案</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card card h-100">
+                        <img src="卓彥國際圖片素材文件夾/卓彥國際-香港政府89成擔保貸款/第1页-1.PNG" class="card-img-top" alt="政府8/9成擔保貸款">
+                        <div class="card-body">
+                            <h5 class="card-title">政府8/9成擔保貸款</h5>
+                            <p class="card-text">協助企業獲取香港政府高達9成擔保的優惠貸款，解決營運資金需求。</p>
+                            <a href="./pages/services/government-loan.html"
+                                class="btn btn-sm btn-outline-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card card h-100">
+                        <img src="卓彥國際圖片素材文件夾/卓彥國際-BUD/第1页-1.PNG" class="card-img-top" alt="BUD專項基金申請">
+                        <div class="card-body">
+                            <h5 class="card-title">BUD專項基金申請</h5>
+                            <p class="card-text">協助企業申請品牌、升級、拓展市場的政府資助，提升競爭力。</p>
+                            <a href="./pages/services/bud-fund.html" class="btn btn-sm btn-outline-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card card h-100">
+                        <img src="卓彥國際圖片素材文件夾/卓彥國際-銀行開戶/第1页-1.PNG" class="card-img-top" alt="企業銀行開戶">
+                        <div class="card-body">
+                            <h5 class="card-title">企業銀行開戶</h5>
+                            <p class="card-text">提供香港主要銀行開戶服務，解決跨境業務和國際貿易的金融需求。</p>
+                            <a href="./pages/services/bank-account.html" class="btn btn-sm btn-outline-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card card h-100">
+                        <img src="卓彥國際圖片素材文件夾/卓彥國際顧問-個⼈貸款申請/第1页-1.PNG" class="card-img-top" alt="個人貸款服務">
+                        <div class="card-body">
+                            <h5 class="card-title">個人貸款服務</h5>
+                            <p class="card-text">提供多元化個人貸款方案，包括無抵押貸款、物業抵押、汽車抵押等。</p>
+                            <a href="./pages/services/personal-loan.html"
+                                class="btn btn-sm btn-outline-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 數據統計區域 -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-text">貸款申請成功率</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">350+</div>
+                        <div class="stat-text">年度開戶案例</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-text">滿意企業客戶</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-text">專業顧問團隊</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 促銷信息區域 -->
+    <section class="promotion-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">最新優惠</h2>
+                <p class="text-muted">把握機會，獲取最優惠的金融服務</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="promotion-card">
+                        <img src="卓彥國際圖片素材文件夾/卓彥廣告圖片/第2页-2.PNG" class="promotion-img" alt="最高批額50萬">
+                        <div class="promotion-content">
+                            <h3 class="promotion-title">最高批額50萬</h3>
+                            <p class="promotion-text">政府擔保貸款計劃，為您的企業提供充足的營運資金支持。</p>
+                            <a href="./pages/services/government-loan.html" class="btn btn-sm btn-primary">立即申請</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="promotion-card">
+                        <img src="卓彥國際圖片素材文件夾/卓彥廣告圖片/第3页-7.PNG" class="promotion-img" alt="24小時快速審批">
+                        <div class="promotion-content">
+                            <h3 class="promotion-title">24小時快速審批</h3>
+                            <p class="promotion-text">個人貸款服務，快速解決您的資金需求，最快24小時內審批完成。</p>
+                            <a href="./pages/services/personal-loan.html" class="btn btn-sm btn-primary">了解詳情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="promotion-card">
+                        <img src="卓彥國際圖片素材文件夾/卓彥廣告圖片/第4页-10.PNG" class="promotion-img" alt="BUD資助高達100萬">
+                        <div class="promotion-content">
+                            <h3 class="promotion-title">BUD資助高達100萬</h3>
+                            <p class="promotion-text">專業團隊協助您申請BUD專項資金，提升企業品牌和市場競爭力。</p>
+                            <a href="./pages/services/bud-fund.html" class="btn btn-sm btn-primary">免費評估</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 行動呼籲區域 -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">準備好提升您的業務了嗎？</h2>
+            <p class="cta-text">我們的專業團隊隨時準備為您提供最適合的金融解決方案，助力您的業務發展。</p>
+            <div class="d-flex justify-content-center flex-wrap gap-3">
+                <a href="./pages/contact.html" class="btn btn-primary">免費咨詢</a>
+                <a href="tel:+85212345678" class="btn btn-outline-light">立即致電</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">卓彥國際顧問有限公司</h5>
+                    <p>為香港及大中華區企業提供專業的金融顧問服務，包括政府擔保貸款、BUD資助申請、企業銀行開戶、個人貸款等。</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-wechat"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">快速鏈接</h5>
+                    <ul class="footer-links">
+                        <li><a href="./index.html">首頁</a></li>
+                        <li><a href="./pages/about.html">關於我們</a></li>
+                        <li><a href="./pages/case-studies.html">成功案例</a></li>
+                        <li><a href="./pages/contact.html">聯繫我們</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5 class="footer-title">我們的服務</h5>
+                    <ul class="footer-links">
+                        <li><a href="./pages/services/government-loan.html">政府8/9成擔保貸款</a></li>
+                        <li><a href="./pages/services/bud-fund.html">BUD專項基金申請</a></li>
+                        <li><a href="./pages/services/bank-account.html">企業銀行開戶</a></li>
+                        <li><a href="./pages/services/personal-loan.html">個人貸款服務</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5 class="footer-title">聯繫方式</h5>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 香港九龍大角咀志發工業大廈2樓A16室</li>
+                        <li><i class="fas fa-phone-alt me-2"></i> (852) 2388-XXXX</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@wingsconsult.com.hk</li>
+                        <li><i class="fas fa-clock me-2"></i> 週一至週五: 9:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 卓彥國際顧問有限公司. 版權所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

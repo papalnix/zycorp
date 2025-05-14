@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人貸款服務 - 卓彥國際顧問有限公司</title>
+    <meta name="description" content="專業辦理香港個人貸款服務，提供靈活貸款方案，快速審批，助您解決資金需求">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #d4af37;
+            --accent-color: #0078d4;
+            --light-bg: #f8f9fa;
+            --dark-bg: #212529;
+        }
+
+        body {
+            font-family: "Microsoft JhengHei", "微軟正黑體", "SimHei", "STHeiti", sans-serif;
+        }
+
+        .navbar {
+            background-color: var(--primary-color) !important;
+            padding: 15px 0;
+        }
+
+        .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-weight: 500;
+            margin: 0 10px;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: var(--secondary-color) !important;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('../../卓彥國際圖片素材文件夾/卓彥國際-個人貸款/第1页-1.PNG');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .feature-list li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .feature-list i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+        }
+
+        .process-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            height: 100%;
+        }
+
+        .case-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            height: 100%;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">卓彥國際顧問</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            服務
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./government-loan.html">政府8/9成擔保貸款</a></li>
+                            <li><a class="dropdown-item" href="./bud-fund.html">BUD專項基金申請</a></li>
+                            <li><a class="dropdown-item" href="./bank-account.html">企業銀行開戶</a></li>
+                            <li><a class="dropdown-item active" href="./personal-loan.html">個人貸款服務</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../case-studies.html">成功案例</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">聯繫我們</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄區域 -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">個人貸款服務</h1>
+            <p class="lead mb-4">專業辦理個人貸款，快速審批，靈活還款，助您解決資金需求</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#contact" class="btn btn-primary btn-lg">立即諮詢</a>
+                <a href="#process" class="btn btn-outline-light btn-lg">了解申請流程</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服務優勢 -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">為什麼選擇我們？</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="process-card text-center">
+                        <i class="fas fa-bolt fa-3x mb-4" style="color: var(--secondary-color)"></i>
+                        <h3 class="h4 mb-3">快速審批</h3>
+                        <p>最快24小時內完成審批，資金即時到位</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="process-card text-center">
+                        <i class="fas fa-file-signature fa-3x mb-4" style="color: var(--secondary-color)"></i>
+                        <h3 class="h4 mb-3">簡單手續</h3>
+                        <p>文件要求簡單，手續便捷快速</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="process-card text-center">
+                        <i class="fas fa-coins fa-3x mb-4" style="color: var(--secondary-color)"></i>
+                        <h3 class="h4 mb-3">靈活還款</h3>
+                        <p>提供多種還款方案，靈活選擇</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 申請流程 -->
+    <section id="process" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">申請流程</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="process-card text-center">
+                        <div class="display-4 mb-3">01</div>
+                        <h4>提交申請</h4>
+                        <p>填寫基本資料，提交貸款申請</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-card text-center">
+                        <div class="display-4 mb-3">02</div>
+                        <h4>資料審核</h4>
+                        <p>專業團隊進行資料審核評估</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-card text-center">
+                        <div class="display-4 mb-3">03</div>
+                        <h4>貸款審批</h4>
+                        <p>快速完成貸款審批程序</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-card text-center">
+                        <div class="display-4 mb-3">04</div>
+                        <h4>放款服務</h4>
+                        <p>完成簽約後即時放款</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 貸款方案 -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">貸款方案</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="case-card">
+                        <img src="../../卓彥國際圖片素材文件夾/卓彥國際-個人貸款/第2页-2.PNG" alt="私人貸款" class="img-fluid rounded mb-4">
+                        <h4>私人貸款</h4>
+                        <p>適合個人消費、裝修、旅遊等資金需求</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i>最高可達50萬</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>還款期長達60個月</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="case-card">
+                        <img src="../../卓彥國際圖片素材文件夾/卓彥國際-個人貸款/第3页-3.PNG" alt="物業貸款" class="img-fluid rounded mb-4">
+                        <h4>物業貸款</h4>
+                        <p>以物業作抵押，享受更優惠利率</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i>最高可達物業估值70%</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>特惠低息優惠</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="case-card">
+                        <img src="../../卓彥國際圖片素材文件夾/卓彥國際-個人貸款/第4页-4.PNG" alt="信用卡結餘轉戶" class="img-fluid rounded mb-4">
+                        <h4>信用卡結餘轉戶</h4>
+                        <p>整合信用卡債務，減輕利息負擔</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i>特低轉戶利率</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>靈活還款期</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡我們 -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4">立即諮詢</h2>
+                    <p class="lead mb-5">填寫以下表格，我們的專業顧問將盡快與您聯繫</p>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="姓名">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control" placeholder="聯絡電話">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control" placeholder="電郵地址">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" rows="4" placeholder="請簡述您的需求"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary btn-lg">提交諮詢</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5 class="footer-title">關於我們</h5>
+                    <ul class="footer-links">
+                        <li><a href="../about.html">公司簡介</a></li>
+                        <li><a href="../case-studies.html">成功案例</a></li>
+                        <li><a href="../contact.html">聯繫我們</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5 class="footer-title">我們的服務</h5>
+                    <ul class="footer-links">
+                        <li><a href="./government-loan.html">政府8/9成擔保貸款</a></li>
+                        <li><a href="./bud-fund.html">BUD專項基金申請</a></li>
+                        <li><a href="./bank-account.html">企業銀行開戶</a></li>
+                        <li><a href="./personal-loan.html">個人貸款服務</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5 class="footer-title">聯絡資訊</h5>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>香港九龍大角咀志發工業大廈2樓A16室</li>
+                        <li><i class="fas fa-clock me-2"></i>週一至週五 9:00-18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 卓彥國際顧問有限公司. 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

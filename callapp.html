@@ -1,0 +1,239 @@
+<!DOCTYPE html> 
+<html lang="zh"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>VapeTech - 高端电子烟体验</title> 
+    <style> 
+        :root { 
+            --dark-color: #1d1d1f; 
+            --light-color: #f5f5f7; 
+            --accent-color: #0071e3; 
+            --gradient-start: #1a1a1a; 
+            --gradient-end: #2c2c2e; 
+        } 
+        
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+        } 
+        
+        body { 
+            background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end)); 
+            color: var(--light-color); 
+        } 
+        
+        header { 
+            padding: 20px 0; 
+            background-color: rgba(29, 29, 31, 0.9); 
+            text-align: center; 
+        } 
+        
+        .logo { 
+            font-size: 24px; 
+            font-weight: 600; 
+            letter-spacing: -0.5px; 
+            margin-bottom: 20px; 
+        } 
+        
+        nav { 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            margin-top: 20px; 
+        } 
+        
+        nav a { 
+            color: var(--light-color); 
+            text-decoration: none; 
+            font-size: 14px; 
+            transition: color 0.3s; 
+        } 
+        
+        nav a:hover { 
+            color: var(--accent-color); 
+        } 
+        
+        .hero { 
+            text-align: center; 
+            padding: 80px 20px; 
+        } 
+        
+        .hero h1 { 
+            font-size: 56px; 
+            font-weight: 600; 
+            margin-bottom: 10px; 
+        } 
+        
+        .hero p { 
+            font-size: 28px; 
+            color: #86868b; 
+            margin-bottom: 30px; 
+        } 
+        
+        .whatsapp-btn { 
+            display: inline-flex; 
+            align-items: center; 
+            background-color: var(--accent-color); 
+            color: white; 
+            padding: 12px 24px; 
+            border-radius: 980px; 
+            text-decoration: none; 
+            font-size: 17px; 
+            font-weight: 400; 
+            transition: all 0.3s; 
+        } 
+        
+        .whatsapp-btn svg { 
+            margin-right: 8px; 
+        } 
+               
+        .whatsapp-btn:hover { 
+            background-color: #0077e6; 
+            transform: scale(1.05); 
+        } 
+        
+        .products { 
+            padding: 40px 20px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        } 
+        
+        .product-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+            gap: 30px; 
+            margin-top: 40px; 
+        } 
+               
+        .product-card { 
+            background-color: rgba(255, 255, 255, 0.05); 
+            border-radius: 18px; 
+            overflow: hidden; 
+            transition: transform 0.3s; 
+        } 
+               
+        .product-card:hover { 
+            transform: scale(1.03); 
+        } 
+        
+        .product-image { 
+            width: 100%; 
+            height: 200px; 
+            background-color: var(--light-color); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        } 
+        
+        .product-info { 
+            padding: 20px; 
+        } 
+        
+        .product-info h3 { 
+            font-size: 18px; 
+            margin-bottom: 10px; 
+        } 
+        
+        .product-info .price { 
+            font-size: 16px; 
+            color: #86868b; 
+        } 
+        
+        .footer { 
+            background-color: rgba(29, 29, 31, 0.9); 
+            padding: 40px 20px; 
+            text-align: center; 
+        } 
+        
+        .cart-icon, .account-icon { 
+            position: fixed; 
+            bottom: 20px; 
+            right: 20px; 
+            background-color: var(--accent-color); 
+            color: white; 
+            width: 60px; 
+            height: 60px; 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 24px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+            cursor: pointer; 
+            transition: all 0.3s; 
+        } 
+        
+        .cart-icon:hover, .account-icon:hover { 
+            transform: scale(1.1); 
+        } 
+        
+        .whatsapp-float { 
+            position: fixed; 
+            bottom: 90px; 
+            right: 20px; 
+            background-color: #25D366; 
+            color: white; 
+            width: 60px; 
+            height: 60px; 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 24px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+            cursor: pointer; 
+            transition: all 0.3s; 
+        } 
+        
+        .whatsapp-float:hover { 
+            transform: scale(1.1); 
+        } 
+    </style> 
+</head> 
+<body> 
+    <header> 
+        <div class="logo">VapeTech</div> 
+        <nav> 
+            <a href="#">首页</a>
+            <a href="#">产品</a>
+            <a href="#">口味</a>
+            <a href="#">关于</a>
+            <a href="#">帮助</a>
+        </nav> 
+    </header> 
+    
+    <section class="hero"> 
+        <h1>新一代电子烟体验</h1> 
+        <p>探索5代技术，50种纯正口味</p> 
+        <a href="https://chat.whatsapp.com" class="whatsapp-btn"> 
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                <path d="M17 3H7C4.24 3 2 5.24 2 8V16C2 18.76 4.24 21 7 21H17C19.76 21 22 18.76 22 16V8C22 5.24 19.76 3 17 3Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> 
+                <path d="M17 11L13 11L13 9C13 9 11 9 11 9C11 9 9 9 9 9L9 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> 
+                <path d="M9 19C9 18.4477 9.4477 18 10 18H14C14.5523 18 15 18.4477 15 19C15 19.5523 14.5523 20 14 20H10C9.44771 20 9 19.5523 9 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> 
+            </svg>
+            联系我们
+        </a>
+    </section>
+
+    <section class="products">
+        <h2>热门产品</h2>
+        <div class="product-grid">
+            <!-- 产品卡片将在这里 -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2023 VapeTech. 保留所有权利。</p>
+    </footer>
+
+    <a href="#" class="whatsapp-float">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.4054 3.5946C18.1607 1.35 15.1714 0.0964 11.9946 0.0911C5.4375 0.0911 0.0964 5.4322 0.0911 11.9893C0.0857 14.1161 0.6643 16.1893 1.7518 18.0054L0 24L6.1339 22.2857C7.8857 23.2607 9.9161 23.7804 11.9893 23.7857H11.9946C18.5464 23.7857 23.8929 18.4446 23.8982 11.8875C23.9036 8.7214 22.65 5.7375 20.4054 3.5946ZM11.9946 21.7875C10.2 21.7875 8.4429 21.2893 6.9107 20.3571L6.5518 20.1429L2.8339 21.1607L3.8679 17.5339L3.6268 17.1589C2.5982 15.5625 2.0839 13.7036 2.0893 11.9893C2.0946 6.5357 6.5411 2.0893 12 2.0893C14.6411 2.0946 17.1214 3.1339 18.9857 5.0036C20.85 6.8732 21.8839 9.3589 21.8786 12C21.8732 17.4536 17.4268 21.7875 11.9946 21.7875ZM17.4161 14.5179C17.1214 14.3732 15.6643 13.6554 15.3911 13.5589C15.1179 13.4625 14.9196 13.4143 14.7214 13.7089C14.5232 14.0036 13.95 14.6732 13.7732 14.8714C13.5964 15.0696 13.4196 15.0911 13.125 14.9464C11.3839 14.0786 10.2375 13.3982 9.0857 11.4321C8.7857 10.9071 9.3911 10.9554 9.9536 9.8304C10.05 9.6321 10.0018 9.4607 9.9268 9.3161C9.8518 9.1714 9.2625 7.7143 9.0161 7.125C8.7804 6.5518 8.5393 6.6321 8.3518 6.6214C8.175 6.6107 7.9768 6.6107 7.7786 6.6107C7.5804 6.6107 7.2589 6.6857 6.9857 6.9804C6.7125 7.275 5.9464 7.9929 5.9464 9.45C5.9464 10.9071 6.9964 12.3107 7.1411 12.5089C7.2857 12.7071 9.2518 15.7446 12.2732 17.0143C14.1321 17.8339 14.8714 17.8929 15.8036 17.7429C16.3768 17.6464 17.5607 17.0143 17.8071 16.3286C18.0536 15.6429 18.0536 15.0536 17.9786 14.9304C17.9036 14.8071 17.7054 14.7321 17.4161 14.5179Z"/>
+        </svg>
+    </a>
+    <script src="js/whatsapp-button.js"></script>
+</body> 
+</html>
